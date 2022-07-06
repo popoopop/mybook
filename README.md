@@ -171,9 +171,37 @@
   	> section1.md
   	> section2.md
   ```
+
 ### 发布分享
 
-### MARKDOWN
+> GitHub为每一个账号提供GitHub Pages站点服务（Hello World教程：https://pages.github.com/）， 步骤如下：
+
+- 创建存储库
+
+	GitHub创建名为username.github.io 的公共存储库（如：https://github.com/popoopop/popoopop.github.io）。
+
+- Clone到本地目录
+
+	使用git clone命令，或者GitHub网站Code下拉按钮选择Open With GitHub Destop桌面程序，将创建的远程存储库克隆到本地目录（如 D:\projects\popoopop.github.io\）。
+
+- 本地目录创建index.html
+
+    ```
+    <!DOCTYPE html>
+    <html>
+    <body>
+    <h1>Hello World</h1>
+    <p>I'm hosted with GitHub Pages.</p>
+    </body>
+    </html>
+    ```
+	add到本地缓存区，并提交到远程存储库。
+
+- 网页预览
+
+	启动浏览器访问 https:// username.github.io 查看效果（如：https://popoopop.github.io/）。
+
+### MakeDown
 > Markdown 是一种轻量级标记语言，只要纯文本编写，加上点标记符，就能转成格式文档（如 HTML 富文本）。
 
 * 下载MD编辑器（typora）

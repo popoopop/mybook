@@ -178,11 +178,11 @@
 
 - 创建存储库
 
-	GitHub创建名为username.github.io 的公共存储库（如：https://github.com/popoopop/popoopop.github.io）。
+	GitHub网站创建一个与您的账号同名的**公共**存储库，格式为username.github.io 。如：https://github.com/popoopop/popoopop.github.io
 
 - Clone到本地目录
 
-	使用git clone命令，或者GitHub网站Code下拉按钮选择Open With GitHub Destop桌面程序，将创建的远程存储库克隆到本地目录（如 D:\projects\popoopop.github.io\）。
+	使用git clone命令，或者GitHub网站Code下拉按钮选择Open With GitHub Destop桌面程序，将远程存储库克隆到本地目录（如 D:\projects\popoopop.github.io\）。
 
 - 本地目录创建index.html
 
@@ -195,11 +195,59 @@
     </body>
     </html>
     ```
-	add到本地缓存区，并提交到远程存储库。
+	将index.html文件add到本地缓存区，并提交到远程存储库。
 
 - 网页预览
 
-	启动浏览器访问 https:// username.github.io 查看效果（如：https://popoopop.github.io/）。
+	浏览器访问 https:// username.github.io 查看效果，如：https://popoopop.github.io/ ，网页生效时间最长需等待20分钟。
+
+### 发布分享（单个仓库）
+
+​	> GitHub也为每一个**公开**存储库提供gh-pages网页预览服务，步骤如下：
+
+ * 进入本地存储库
+
+   如 cd D:\projects\mybook
+
+ * 初始化目录
+
+   git init
+
+ * 创建gh-pages分支
+
+   git checkout --orphan gh-pages
+
+ * 添加文件到暂存区
+
+   git add .
+
+ * 添加提交信息
+
+   git commit -m "create gh-pages xxxxx"
+
+ * 推送到远程仓库
+
+   git push origin gh-pages
+
+   这时刷新github仓库就可以看到gh-pages分支了。
+
+ * 定制gh-pages网页
+
+   github网站打开mybook仓库，选择gh-pages分支，点击setting，打开左侧栏Code and automation下的Pages页。
+
+   右侧可以看到我们的网页地址（生效时间可能需要几分钟）：
+
+   ```
+   Your site is ready to be published at https://popoopop.github.io/mybook/
+   ```
+   
+   设置Source，选择Branch:gh-pages分支，Save。
+   
+   自由选择一个GitHub自带的主题。
+   
+   如果有自己的域名，可以在Custom domain中设置。
+   
+   等待几分钟之后，浏览器打开：https://popoopop.github.io/mybook/ 预览。
 
 ### MakeDown
 > Markdown 是一种轻量级标记语言，只要纯文本编写，加上点标记符，就能转成格式文档（如 HTML 富文本）。

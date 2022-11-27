@@ -1,4 +1,4 @@
-# Gitbook入门
+﻿# Gitbook入门
 
 
 
@@ -249,6 +249,7 @@
    
    等待几分钟之后，浏览器打开：https://popoopop.github.io/mybook/ 预览。
 
+参考：https://www.cnblogs.com/yuxiaole/p/9346160.html
 ### MakeDown
 > Markdown 是一种轻量级标记语言，只要纯文本编写，加上点标记符，就能转成格式文档（如 HTML 富文本）。
 
